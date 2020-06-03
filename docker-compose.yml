@@ -71,6 +71,8 @@ services:
         depends_on:
             - api
             - client
+
+        restart: always
         # build specifications
         build:
             # build using Dockerfile.dev
