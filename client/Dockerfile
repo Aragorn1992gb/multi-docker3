@@ -10,7 +10,7 @@ FROM node:alpine
 WORKDIR '/app'
 
 # Metti l'asterisco dopo package se deploy sy AWS elastic-beanstalk
-COPY package*.json ./
+COPY ./package*.json ./
 # COPY package.json ./
 RUN npm install
 COPY . .
